@@ -43,17 +43,18 @@
             text-align: center;
             position: relative;
         }
-
-        .main-image {
+        
+                .main-image {
             width: 100%;
-            max-width: 450px;
-            height: auto;
+            max-width: 450px; /* Это ограничивает ширину */
+            height: auto; /* Сохраняет пропорции */
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
             margin-bottom: 30px;
             animation: float 3s ease-in-out infinite;
         }
-
+        
+        /* Добавьте эту анимацию тоже: */
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
             50% { transform: translateY(-10px); }
@@ -521,5 +522,6 @@
     </script>
 </body>
 </html>
+
 
 
